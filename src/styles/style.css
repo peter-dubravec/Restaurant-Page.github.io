@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/antic-didone-v9-latin-regular.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyFont1";
+  src: url("../fonts/Kanit-Black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+.initialContent {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  gap: 50px;
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: "MyFont1";
+  font-size: 50px;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  background: linear-gradient(0.25turn, green, white, red);
+}
+
+section {
+  width: 100%;
+  font-size: 20px;
+}
+.intialp {
+  text-align: center;
+  padding: 60px;
+}
+
+.intialMain {
+  color: white;
+  flex: 1;
+  background-image: url(../images/pizza-ge86e9b007_1920.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+/* -----------------this section is for menu---------------------- */
+
+.menumain {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  flex: 1;
+  background-image: url(../images/blackboard.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.menuimg {
+  max-width: 45%;
+  border-radius: 50%;
+}
+
+.menup {
+  text-align: center;
+  padding: 10px;
+}
+
+/* ------------this is for contact-------- */
+
+.contactcontent {
+  display: flex;
+  flex: 1;
+}
+
+.contactmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  flex: 1;
+  background-image: url(../images/blackboard.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.contactimg {
+  max-width: 425px;
+  max-height: 300px;
+}
+
+.contactp {
+  padding: 50px;
+}
