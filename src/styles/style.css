@@ -22,7 +22,7 @@
 .initialContent {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vw;
 }
 
 li {
@@ -68,18 +68,25 @@ nav {
 section {
   width: 100%;
   font-size: 20px;
+  max-width: 2200px;
+  margin: 0 auto;
 }
+
 .intialp {
   text-align: center;
-  padding: 60px;
+  padding: 3em;
 }
 
 .intialMain {
   color: white;
   flex: 1;
   background-image: url(../images/pizza-ge86e9b007_1920.jpg);
+  background-position: top left;
   background-size: cover;
   z-index: -1;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  min-height: 1000px;
 }
 
 /* -----------------this section is for menu---------------------- */
@@ -91,17 +98,25 @@ section {
   flex: 1;
   background-image: url(../images/blackboard.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1000px;
   z-index: -1;
+  padding: 2.5em 2em 2em 1em;
 }
 
 .menu {
   display: flex;
   flex-basis: 50%;
   align-items: center;
+  max-width: 800px;
+  max-height: 400px;
 }
 
+div.menu {
+  margin: 0 auto;
+}
 .menuimg {
-  max-width: 45%;
+  width: 45%;
   border-radius: 50%;
 }
 
@@ -128,13 +143,66 @@ section {
   background-image: url(../images/blackboard.jpg);
   background-size: cover;
   z-index: -1;
+  min-height: 1000px;
 }
 
 .contactimg {
-  max-width: 425px;
-  max-height: 300px;
+  width: 40%;
+  height: 40%;
+  max-width: 800px;
+  max-height: 700px;
 }
 
 .contactp {
-  padding: 50px;
+  padding: 3em;
+  max-width: 1200px;
+}
+
+@media (min-width: 1150px) {
+  section {
+    font-size: 25px;
+  }
+  .contactp {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1850px) {
+  section {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 870px) {
+  .menumain {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 50%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menumain {
+    min-height: 1280px;
+  }
+  .menuimg {
+    width: 25%;
+  }
+  .menup {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 850px) {
+  .contactp {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactp {
+    font-size: 30px;
+  }
 }

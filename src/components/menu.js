@@ -1,4 +1,4 @@
-import PizzaIcon from "../images/individualpizza.jpg";
+import PizzaIcon from "../images/individualpizza.png";
 
 function menu() {
   let content = document.querySelector(".initialContent");
